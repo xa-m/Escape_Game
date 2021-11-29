@@ -22,9 +22,8 @@ void UWorldPosition::BeginPlay()
 	FString ObjectName = GetOwner()->GetName();
 	FString ObjectPosition = GetOwner()->GetActorTransform().GetLocation().ToString();
 
-
 	UE_LOG(LogTemp, Warning, TEXT("%s object's position: %s"), *ObjectName, *ObjectPosition);
-
+	
 }
 
 
@@ -33,6 +32,6 @@ void UWorldPosition::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+
 }
 
